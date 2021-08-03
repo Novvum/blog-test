@@ -31,7 +31,8 @@ module.exports = {
           `https://blog.logrocket.com/graphqlapi`,
         type: {
           __all: {
-              limit: process.env.NODE_ENV === `development` ? 10 : null
+              // limit: process.env.NODE_ENV === `development` ? 10 : null
+              limit: 10,
           }
       }
       },
