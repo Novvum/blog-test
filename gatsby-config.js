@@ -29,12 +29,12 @@ module.exports = {
         url:
           process.env.WPGRAPHQL_URL ||
           `https://blog.logrocket.com/graphqlapi`,
-        type: {
-          __all: {
-              // limit: process.env.NODE_ENV === `development` ? 10 : null
-              limit: 10,
-          }
-      }
+        schema: {
+          requestConcurrency: 20,
+          perPage: 20,
+          requestConcurrency: 5,
+          previewRequestConcurrency: 2,
+        },
       },
     },
 
