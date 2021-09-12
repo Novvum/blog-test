@@ -30,10 +30,10 @@ module.exports = {
           process.env.WPGRAPHQL_URL ||
           `https://blog.logrocket.com/graphqlapi`,
         schema: {
-          requestConcurrency: 20,
-          perPage: 20,
-          requestConcurrency: 5,
-          previewRequestConcurrency: 2,
+          timeout: 3000000,
+          requestConcurrency: 1,
+          previewRequestConcurrency: 1,
+          perPage: 1,
         },
       },
     },
