@@ -33,7 +33,7 @@ module.exports = {
           timeout: 3000000,
           requestConcurrency: 1,
           previewRequestConcurrency: 1,
-          perPage: 1,
+          perPage: 100,
         },
       },
     },
