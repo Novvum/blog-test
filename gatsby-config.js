@@ -29,6 +29,14 @@ module.exports = {
         url:
           process.env.WPGRAPHQL_URL ||
           `https://blog.logrocket.com/graphqlapi`,
+        type: {
+          MediaItem: {
+            localFile: {
+              requestConcurrency: 5,
+            },
+            lazyNodes: false,
+          },
+        },
         schema: {
           timeout: 3000000,
           requestConcurrency: 1,
