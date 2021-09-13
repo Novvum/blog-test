@@ -32,7 +32,7 @@ module.exports = {
         type: {
           MediaItem: {
             localFile: {
-              requestConcurrency: 5,
+              requestConcurrency: 1,
             },
             lazyNodes: false,
           },
